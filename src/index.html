@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <!-- ============ NAV ============ -->
+    <header class="md:sticky top-0 z-50 bg-[#FBF9F5]/90 backdrop-blur border-b border-[#1A2029]/10">
+        <div class="container h-16 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-2">
+                <img src="./img/Logo.jpg" alt="" class="h-11 w-11 object-contain rounded">
+                <span class="display text-xl font-bold text-[#1A2029]">Gadget<span class="text-[#D96A0C]">Point</span></span>
+            </a>
+            <a href="#order" class="hidden sm:inline-flex items-center gap-2 bg-[#1A2029] text-[#FBF9F5] font-display text-sm tracking-wide px-5 py-2.5 rounded-full hover:bg-[#F4801E] transition-colors">
+            অর্ডার করুন
+            </a>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#FBF9F5] via-[#FBF9F5] to-[#FDECD9]"></div>
+        <div class="relative container pt-8 pb-10 sm:pt-14 sm:pb-16 grid md:grid-cols-2 gap-8 items-center">
+            <div class="fade-up">
+                <span class="inline-block font-data text-xs tracking-[0.2em] uppercase text-[#D96A0C] bg-[#FDECD9] px-3 py-1 rounded-full mb-5">POEDAGAR &middot; MODEL 836</span>
+                <h1 class="font-display text-5xl sm:text-6xl leading-[130%] font-semibold text-[#1A2029]">
+                    স্টাইলের সাথে<br>সময়ের <span class="text-[#F4801E]">নিখুঁত সমন্বয়!</span>
+                </h1>
+                <div class="review-slider md:hidden mt-4" data-autoplay="3500">
+                    <div class="review-track">
+                        <div class="review-slide"><img src="./img/2.1.png" alt="review"></div>
+                        <div class="review-slide"><img src="./img/2.2.png" alt="review"></div>
+                        <div class="review-slide"><img src="./img/2.3.png" alt="review"></div>
+                        <div class="review-slide"><img src="./img/2.4.png" alt="review"></div>
+                    </div>
+                    <button type="button" class="review-btn review-prev" aria-label="Previous">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="review-btn review-next" aria-label="Next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <div class="review-dots"></div>
+                </div>
+                <p class="mt-5 text-xl sm:text-2xl text-[#1A2029]/90 max-w-md leading-relaxed font-medium">
+                    প্রতিটি মুহূর্তে থাকুন আত্মবিশ্বাসী। <strong class="text-[#1A2029]">POEDAGAR 836 Men's Premium Watch</strong>। এর Premium Design, Accurate Quartz Movement ও Day & Date Display আপনার স্টাইলকে করবে আরও পরিপূর্ণ।
+                </p>
+                <div class="md:hidden mt-4 rounded-2xl overflow-hidden shadow-lg aspect-video fade-up">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/41Awf9Knaqc" title="Product Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="mt-7 flex flex-wrap justify-center gap-4">
+                    <a href="#order" class="pulse-cta font-bold font-display text-lg tracking-wide bg-[#F4801E] text-white px-8 py-4 rounded-full hover:bg-[#D96A0C] transition-colors">
+                    এখনই অর্ডার করুন
+                    </a>
+                    <a href="#specs" class="font-display font-bold text-lg tracking-wide border-2 border-[#1A2029]/15 text-[#1A2029] px-8 py-4 rounded-full hover:border-[#F4801E] hover:text-[#D96A0C] transition-colors">
+                    স্পেসিফিকেশন দেখুন
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center fade-up hidden md:block">
+                <div class="review-slider" data-autoplay="4000">
+                    <div class="review-track">
+                        <div class="review-slide"><img src="./img/2.1.png" alt="review"></div>
+                        <div class="review-slide"><img src="./img/2.2.png" alt="review"></div>
+                        <div class="review-slide"><img src="./img/2.3.png" alt="review"></div>
+                        <div class="review-slide"><img src="./img/2.4.png" alt="review"></div>
+                    </div>
+                    <button type="button" class="review-btn review-prev" aria-label="Previous">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="review-btn review-next" aria-label="Next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <div class="review-dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TRUST BAR ============ -->
+    <section class="bg-[#1A2029] text-[#FBF9F5]">
+        <div class="container py-4 md:py-5 grid grid-cols-2 sm:grid-cols-4 gap-5 text-center">
+            <div class="fade-up">
+            <p class="font-display text-2xl text-[#F4801E]">✓</p>
+            <p class="text-sm sm:text-base font-medium mt-1 text-[#FBF9F5]/90">Home Delivery</p>
+            </div>
+            <div class="fade-up">
+            <p class="font-display text-2xl text-[#F4801E]">✓</p>
+            <p class="text-sm sm:text-base font-medium mt-1 text-[#FBF9F5]/90">Cash On Delivery</p>
+            </div>
+            <div class="fade-up">
+            <p class="font-display text-2xl text-[#F4801E]">✓</p>
+            <p class="text-sm sm:text-base font-medium mt-1 text-[#FBF9F5]/90">Safe Packaging</p>
+            </div>
+            <div class="fade-up">
+            <p class="font-display text-2xl text-[#F4801E]">✓</p>
+            <p class="text-sm sm:text-base font-medium mt-1 text-[#FBF9F5]/90">Pay The Price</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VIDEO ============ -->
+    <section class="container pt-8 md:pt-12 hidden md:block">
+        <div class="fade-up max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-lg aspect-video">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/41Awf9Knaqc" title="Product Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- ============ COLLECTION ============ -->
+    <section class="container pt-8 md:pt-12">
+        <div class="text-center mb-8 fade-up">
+            <span class="font-data text-xs tracking-[0.2em] uppercase text-[#D96A0C]">PREMIUM COLLECTION</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-semibold mt-2">আমাদের <span class="text-[#F4801E]">কালেকশন</span></h2>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+            <!-- collection card -->
+            <div class="fade-up bg-white rounded-2xl overflow-hidden border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <img src="./img/img1.png" alt="White Dial - Gold" class="w-full aspect-square object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="font-display font-medium text-lg">White Dial - Gold</h3>
+                    <p class="font-display text-xl font-bold text-[#F4801E] mt-1">৳ 1850</p>
+                    <a href="#order" class="mt-3 inline-flex items-center justify-center w-full bg-[#1A2029] text-[#FBF9F5] font-display text-sm tracking-wide px-4 py-2.5 rounded-full hover:bg-[#F4801E] transition-colors">
+                        অর্ডার করুন
+                    </a>
+                </div>
+            </div>
+            <div class="fade-up bg-white rounded-2xl overflow-hidden border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <img src="./img/img222.png" alt="Black Dial - Classic" class="w-full aspect-square object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="font-display font-medium text-lg">Black Dial - Classic</h3>
+                    <p class="font-display text-xl font-bold text-[#F4801E] mt-1">৳ 1850</p>
+                    <a href="#order" class="mt-3 inline-flex items-center justify-center w-full bg-[#1A2029] text-[#FBF9F5] font-display text-sm tracking-wide px-4 py-2.5 rounded-full hover:bg-[#F4801E] transition-colors">
+                        অর্ডার করুন
+                    </a>
+                </div>
+            </div>
+            <div class="fade-up bg-white rounded-2xl overflow-hidden border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <img src="./img/img3.jfif" alt="White Dial - Silver" class="w-full aspect-square object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="font-display font-medium text-lg">White Dial - Silver</h3>
+                    <p class="font-display text-xl font-bold text-[#F4801E] mt-1">৳ 1850</p>
+                    <a href="#order" class="mt-3 inline-flex items-center justify-center w-full bg-[#1A2029] text-[#FBF9F5] font-display text-sm tracking-wide px-4 py-2.5 rounded-full hover:bg-[#F4801E] transition-colors">
+                        অর্ডার করুন
+                    </a>
+                </div>
+            </div>
+            <div class="fade-up bg-white rounded-2xl overflow-hidden border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <img src="./img/img4.jpg" alt="Black Dial - Luxury" class="w-full aspect-square object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="font-display font-medium text-lg">Black Dial - Luxury</h3>
+                    <p class="font-display text-xl font-bold text-[#F4801E] mt-1">৳ 1850</p>
+                    <a href="#order" class="mt-3 inline-flex items-center justify-center w-full bg-[#1A2029] text-[#FBF9F5] font-display text-sm tracking-wide px-4 py-2.5 rounded-full hover:bg-[#F4801E] transition-colors">
+                        অর্ডার করুন
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-7 flex flex-wrap justify-center gap-4">
+            <a href="#order" class="font-display font-bold text-lg tracking-wide border-2 border-[#F4801E] text-[#D96A0C] px-8 py-3 rounded-full hover:bg-[#F4801E] hover:text-white transition-colors">
+                সব কালেকশন দেখুন
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ WHY THIS WATCH ============ -->
+    <section class="container py-8 md:py-12">
+        <div class="text-center mb-8 fade-up">
+            <span class="font-data text-xs tracking-[0.2em] uppercase text-[#D96A0C]">FEATURES</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-semibold mt-2">কেন <span class="text-[#F4801E]">POEDAGAR 836</span>?</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- feature card template -->
+            <div class="fade-up bg-white rounded-2xl p-5 border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <div class="w-11 h-11 rounded-xl bg-[#FDECD9] flex items-center justify-center mb-4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96A0C" stroke-width="2"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"/></svg>
+                </div>
+                <h3 class="font-display font-medium text-xl">Premium Luxury Design</h3>
+                <p class="text-base text-[#1A2029]/75 mt-1.5">আধুনিক ও এলিগেন্ট লুক যা যেকোনো পোশাকের সাথে মানানসই।</p>
+            </div>
+            <div class="fade-up bg-white rounded-2xl p-5 border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <div class="w-11 h-11 rounded-xl bg-[#FDECD9] flex items-center justify-center mb-4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96A0C" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                </div>
+                <h3 class="font-display font-medium text-xl">Accurate Quartz Movement</h3>
+                <p class="text-base text-[#1A2029]/75 mt-1.5">নির্ভুল সময় প্রদর্শনের জন্য উন্নতমানের Quartz মুভমেন্ট।</p>
+            </div>
+            <div class="fade-up bg-white rounded-2xl p-5 border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <div class="w-11 h-11 rounded-xl bg-[#FDECD9] flex items-center justify-center mb-4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96A0C" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+                </div>
+                <h3 class="font-display font-medium text-xl">Day &amp; Date Display</h3>
+                <p class="text-base text-[#1A2029]/75 mt-1.5">এক নজরে দিন ও তারিখ দেখার সুবিধা।</p>
+            </div>
+            <div class="fade-up bg-white rounded-2xl p-5 border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <div class="w-11 h-11 rounded-xl bg-[#FDECD9] flex items-center justify-center mb-4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96A0C" stroke-width="2"><path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/></svg>
+                </div>
+                <h3 class="font-display font-medium text-xl">Scratch Resistant Glass</h3>
+                <p class="text-base text-[#1A2029]/75 mt-1.5">দীর্ঘস্থায়ী স্বচ্ছতার জন্য মজবুত কোটেড গ্লাস।</p>
+            </div>
+            <div class="fade-up bg-white rounded-2xl p-5 border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <div class="w-11 h-11 rounded-xl bg-[#FDECD9] flex items-center justify-center mb-4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96A0C" stroke-width="2"><path d="M12 2C8 6 5 9.5 5 14a7 7 0 0014 0c0-4.5-3-8-7-12z"/></svg>
+                </div>
+                <h3 class="font-display font-medium text-xl">3ATM Water Resistant</h3>
+                <p class="text-base text-[#1A2029]/75 mt-1.5">হালকা পানি ও বৃষ্টিতেও চিন্তামুক্ত ব্যবহার।</p>
+            </div>
+            <div class="fade-up bg-white rounded-2xl p-5 border border-[#1A2029]/10 hover:border-[#F4801E]/50 hover:shadow-lg transition-all">
+                <div class="w-11 h-11 rounded-xl bg-[#FDECD9] flex items-center justify-center mb-4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96A0C" stroke-width="2"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M10 21h4"/></svg>
+                </div>
+                <h3 class="font-display font-medium text-xl">Comfortable Strap</h3>
+                <p class="text-base text-[#1A2029]/75 mt-1.5">প্রিমিয়াম ফিনিশিং সহ আরামদায়ক Stainless Steel স্ট্র্যাপ।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SPECS ============ -->
+    <section id="specs" class="bg-[#1A2029] text-[#FBF9F5] py-8 md:py-14 overflow-hidden">
+        <div class="container">
+            <div class="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
+                <!-- watch image -->
+                <div class="fade-up text-center">
+                    <img src="./img/imgrotate.png" alt="POEDAGAR 836" class="inline-block w-full -rotate-45">
+                </div>
+                <!-- spec content -->
+                <div class="fade-up">
+                    <span class="font-data text-xs tracking-[0.2em] uppercase text-[#F4801E]">SPECIFICATIONS</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-semibold mt-2 mb-6">এক নজরে <span class="text-[#F4801E]">স্পেসিফিকেশন</span></h2>
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <!-- spec item -->
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 5 5-2-2 5 4 2-4 2 2 5-5-2-3 5-3-5-5 2 2-5-4-2 4-2-2-5 5 2z"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Brand</p><p class="font-medium">POEDAGAR</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"/><path d="M16 3.1a3 3 0 010 5.8M22 21v-2a5 5 0 00-3-4.6"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Model</p><p class="font-medium">836</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Movement</p><p class="font-medium">Quartz</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Dial Diameter</p><p class="font-medium">41mm</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="2"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Case Thickness</p><p class="font-medium">11mm</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Display</p><p class="font-medium">Analog Day &amp; Date</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 5-3 7-7 9-4-2-7-4-7-9V7z"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Glass</p><p class="font-medium">Hardlex / Coated Glass</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 5 9.5 5 14a7 7 0 0014 0c0-4.5-3-8-7-12z"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Water Resistance</p><p class="font-medium">3ATM</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a5 5 0 00-7 7l-5 5 2 2 5-5a5 5 0 007-7l-3 3-2-2z"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Case Material</p><p class="font-medium">Alloy / Stainless Steel</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="4" rx="1"/><path d="M7 10V7a2 2 0 012-2h6a2 2 0 012 2v3M7 14v3a2 2 0 002 2h6a2 2 0 002-2v-3"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Clasp</p><p class="font-medium">Side Push Lock</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl bg-[#FBF9F5]/5 border border-[#FBF9F5]/10 px-4 py-3 sm:col-span-2">
+                            <svg class="text-[#F4801E] shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 6.5H21l-5 4.5L17.5 20 12 16l-5.5 4L8 13 3 8.5h6.5z"/></svg>
+                            <div><p class="text-xs text-[#FBF9F5]/60 font-data">Style</p><p class="font-medium">Business &middot; Casual &middot; Fashion</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ORDER FORM ============ -->
+    <section id="order" class="bg-[#1A2029]">
+
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-[#1A2029] text-[#FBF9F5]/70 pt-8 md:pt-12 pb-8 border-t border-[#FBF9F5]/10">
+        <div class="container">
+            <div class="grid sm:grid-cols-3 gap-8 pb-8 border-b border-[#FBF9F5]/10">
+
+            <div>
+                <img src="./img/Logo.jpg" alt="Gadget Point" class="h-11 w-auto object-contain bg-[#FBF9F5] rounded-lg px-2 py-1.5 mb-3">
+                <p class="text-sm leading-relaxed max-w-xs">আপনার বিশ্বস্ত গ্যাজেট ও লাইফস্টাইল প্রোডাক্ট শপ — মানসম্মত পণ্য, সহজ অর্ডার, নিশ্চিত ডেলিভারি।</p>
+            </div>
+
+            <div>
+                <h3 class="font-display text-[#FBF9F5] text-base tracking-wide mb-3">গুরুত্বপূর্ণ লিংক</h3>
+                <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-[#F4801E] transition-colors">প্রাইভেসি পলিসি</a></li>
+                <li><a href="#" class="hover:text-[#F4801E] transition-colors">টার্মস অ্যান্ড কন্ডিশনস</a></li>
+                <li><a href="#" class="hover:text-[#F4801E] transition-colors">রিফান্ড পলিসি</a></li>
+                <li><a href="#order" class="hover:text-[#F4801E] transition-colors">অর্ডার করুন</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-display text-[#FBF9F5] text-base tracking-wide mb-3">আমাদের ফলো করুন</h3>
+                <div class="flex items-center gap-3">
+                <a href="https://www.facebook.com/GadgettPoint" aria-label="Facebook" class="w-10 h-10 rounded-full bg-[#FBF9F5]/10 flex items-center justify-center hover:bg-[#F4801E] transition-colors">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/GadgettPoint" aria-label="Instagram" class="w-10 h-10 rounded-full bg-[#FBF9F5]/10 flex items-center justify-center hover:bg-[#F4801E] transition-colors">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                </a>
+                <a href="https://wa.me/8801718774171" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-[#FBF9F5]/10 flex items-center justify-center hover:bg-[#F4801E] transition-colors">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.4.4-.2.7.2.3.9 1.5 2 2.4 1.3 1.2 2.4 1.6 2.8 1.7.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.8.9 2.1 1 .3.2.5.2.6.3.1.2.1.7-.1 1.1z"/></svg>
+                </a>
+                </div>
+            </div>
+
+            </div>
+            <p class="text-xs text-center pt-6">&copy; 2026 Gadget Point. সকল অধিকার সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <!-- ============ MOBILE STICKY CTA ============ -->
+    <div class="sm:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-[#1A2029]/10 p-3 flex gap-3">
+        <a href="tel:01718774171" class="flex-1 font-bold flex items-center justify-center gap-2 border-2 border-[#1A2029]/15 rounded-full py-3 font-display text-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A2029" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            কল করুন
+        </a>
+        <a href="#order" class="flex-1 font-bold flex items-center justify-center bg-[#F4801E] text-white rounded-full py-3 font-display text-sm">
+            অর্ডার করুন
+        </a>
+    </div>
+    <div class="sm:hidden h-16"></div>
+
+    <script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+        }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // ===== Review Slider =====
+    document.querySelectorAll('.review-slider').forEach(slider => {
+        const track = slider.querySelector('.review-track');
+        const slides = track.querySelectorAll('.review-slide');
+        const dotsWrap = slider.querySelector('.review-dots');
+
+        // build dots
+        slides.forEach((_, i) => {
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.setAttribute('aria-label', 'Slide ' + (i + 1));
+            b.addEventListener('click', () => {
+                track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+            });
+            dotsWrap.appendChild(b);
+        });
+        const dots = dotsWrap.querySelectorAll('button');
+
+        function current() {
+            return Math.round(track.scrollLeft / track.clientWidth);
+        }
+        function goTo(i) {
+            const idx = (i + slides.length) % slides.length;
+            track.scrollTo({ left: slides[idx].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+        }
+
+        // prev / next buttons
+        const prevBtn = slider.querySelector('.review-prev');
+        const nextBtn = slider.querySelector('.review-next');
+        if (prevBtn) prevBtn.addEventListener('click', () => goTo(current() - 1));
+        if (nextBtn) nextBtn.addEventListener('click', () => goTo(current() + 1));
+        function setActive() {
+            const idx = current();
+            dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        }
+        setActive();
+
+        let scrollT;
+        track.addEventListener('scroll', () => {
+            clearTimeout(scrollT);
+            scrollT = setTimeout(setActive, 80);
+        }, { passive: true });
+
+        // autoplay
+        const delay = parseInt(slider.dataset.autoplay || '0', 10);
+        if (delay > 0) {
+            let paused = false;
+            slider.addEventListener('pointerdown', () => { paused = true; });
+            slider.addEventListener('mouseenter', () => { paused = true; });
+            slider.addEventListener('mouseleave', () => { paused = false; });
+            setInterval(() => {
+                if (paused || !slider.offsetParent) return; // skip if hidden
+                const next = (current() + 1) % slides.length;
+                track.scrollTo({ left: slides[next].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+            }, delay);
+        }
+    });
+    </script>
+
+</body>
+</html>
